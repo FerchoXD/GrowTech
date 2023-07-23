@@ -1,0 +1,41 @@
+.footer{
+    width: 100%;
+    height: 20%;
+    background-color: #C6CED0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    
+}
+
+.p-footer{
+    color: #40A798
+}
+
+.footer>div{
+    position: relative;
+    right: 15%;
+}
+
+.footer>div>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+    .footer{
+        height: 20%;
+    }
+
+    .p-footer{
+        font-size: 18px;
+    }
+
+    .img-footer{
+        width: 90%;
+    }
+}

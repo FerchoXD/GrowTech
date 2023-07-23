@@ -1,0 +1,321 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #C6CED0;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.div-img-logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.img-logo {
+    height: 80%;
+    position: static;
+}
+
+.nav-header {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.div-img-perfil {
+    height: 100%;
+    width: min-content;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-perfil {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container>div {
+    top: 20%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.child {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.child:nth-child(1) {
+    min-width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-container {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.titulo-container>h1 {
+    font-size: 25px;
+    color: #40A798;
+    border: 0.5px solid #828282;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.tabla-container {
+    width: 70%;
+    height: 40%;
+}
+
+.tabla {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: dashed 2px #9D9D9D;
+}
+
+.tabla-header {
+    background-color: #86C7BE;
+    height: 25%;
+    display: flex;
+    width: 100%;
+}
+
+.tr-header {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.tr-header-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.tr-header-item {
+    flex: 1;
+    /* Cambiamos flex-grow: 1 por flex: 1 */
+    text-align: center;
+    /* Añadimos este estilo para centrar el contenido */
+}
+
+/* Estilo para el primer hijo */
+.tr-header-item:first-child {
+    flex: 0 0 10%;
+    /* Aquí usamos flex: 0 0 10% para que el primer hijo use el 10% del espacio disponible */
+}
+
+.tr-header>th {
+    color: #476268;
+    align-items: center;
+    border-bottom: solid 2px #5E757B;
+}
+
+.tabla-body {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tr-body {
+    height: 25%;
+    display: flex;
+    width: 100%;
+    border-bottom: solid 2px #75898D;
+    align-items: center;
+}
+
+.tr-body-item {
+    flex: 1;
+    /* Cambiamos flex-grow: 1 por flex: 1 */
+    text-align: center;
+    /* Añadimos este estilo para centrar el contenido */
+}
+
+.tr-body-item:first-child {
+    flex: 0 0 10%;
+}
+
+.tabla-botones {
+    height: 15%;
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.div-button-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-button-item:nth-child(1),
+.div-button-item:nth-child(2) {
+    flex-basis: 25%;
+}
+
+.button-item {
+    background-color: #86C7BE;
+    border-radius: 20px;
+    border: none;
+    height: 100%;
+    width: 30%;
+}
+
+.botones-paginado {
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tabla-botones>div:first-child,
+.tabla-botones>div:last-child {
+    flex-basis: 30%;
+}
+
+.tabla-botones>div:nth-child(2) {
+    flex-grow: 1;
+}
+
+.temperatura-container {
+    width: 100%;
+    max-height: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.temperatura-main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 100%;
+    width: 70%;
+    margin-left: 5%;
+}
+
+.img-temperatura {
+    height: 70%;
+}
+
+.temperatura-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.temperatura {
+    font-size: 50px;
+}
+
+.temperatura-text {
+    color: #40A798;
+}
+
+.child:nth-child(2) {
+    min-width: 25%;
+    min-height: 85vh;
+    background-color: #C6CED0;
+    position: fixed;
+    left: 75%;
+    transform: translateX(100%);
+}
+
+.nav-child {
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ul {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-li>a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #476268;
+}
+
+.nav-li>a:hover {
+    color: #40A798;
+}
+
+/*
+    Aqui inicia el css para la vista de las graficas
+*/
+.grafica-1 {
+    width: 50%;
+    height: 70%;
+}
+
+/*
+    Aqui inica el css para la vista de las recomendaciones
+*/

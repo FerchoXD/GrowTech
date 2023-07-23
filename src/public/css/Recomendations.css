@@ -1,0 +1,38 @@
+.padre-plantas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.consejos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ultimo-consejo{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.consejo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.imagen-consejo{
+    width: max-content;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.texto-consejo{
+    width: 60%;
+    height: 100%;
+}

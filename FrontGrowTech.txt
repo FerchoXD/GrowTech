@@ -1,0 +1,11 @@
+## Dependencias a instalar
+
+
+npm install express path
+npm install react-router-dom
+npm install recharts
+npm install sweetalert2
+npm install universal-cookie
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
