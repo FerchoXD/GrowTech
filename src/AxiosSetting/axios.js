@@ -4,7 +4,7 @@ import Cookies from 'universal-cookie'
 const cookies = new Cookies()
 
 const instance = axios.create({
-  baseURL: 'http://127.0.0.1:8000'
+  baseURL: 'https://growtech.ddns.net'
 })
 
 instance.interceptors.request.use(config => {
